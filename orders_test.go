@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"test_golang_api/orders"
+	"github.com/mpalop/test_golang_api/models"
 	"testing"
 )
 
@@ -65,16 +65,16 @@ func TestParseOrder(t *testing.T) {
 }
 `)
 
-	theOrder, err := orders.Build(order_sample)
+	theOrder, err := models.BuildOrder(order_sample)
 	if err != nil {
 		t.Errorf("%v, %v\n", theOrder, err)
 	}
-	theOrder2, err := orders.Build(order_sample_bad_numbers)
+	theOrder2, err := models.BuildOrder(order_sample_bad_numbers)
 	if err != nil {
 		t.Errorf("%v %v\n", theOrder2, err)
 	}
 
-	fail, err := orders.Build(order_bad)
+	fail, err := models.BuildOrder(order_bad)
 	if err != nil {
 		fmt.Printf("Detecting bad JSON OK\n")
 	} else {
