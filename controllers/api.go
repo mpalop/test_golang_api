@@ -69,7 +69,7 @@ func listOrders(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 // StartServer
 // This is the main function.
 //
-// It just starts up the http server and server the URL defined:
+// It just starts up the http server and listen the following URL:
 //
 // /order <POST> to add orders
 //
