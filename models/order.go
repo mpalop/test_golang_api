@@ -64,7 +64,6 @@ func (order *Order) String() string {
 	return fmt.Sprintf("Order: %5d, StoreId: %5d\n%s", order.Id, order.StoreId, sb.String())
 }
 
-
 // validateOrder
 // This internal method checks the order of the lines to validate if the order is correct or no
 //

@@ -1,0 +1,16 @@
+{
+  "order": {
+    "id": 2,
+    "store_id": 30,
+    "lines": [
+      {
+        "line_number": 1,
+        "sku": "yellow_sock"
+      },
+      {
+        "line_number": 2,
+        "sku": "purple_sock"
+      }
+    ]
+  }
+}

@@ -37,7 +37,7 @@ func (w *Warehouse) SaveOrder(order *models.Order) error {
 		w.Ids[order.Id] = order
 		return nil
 	} else {
-		return errors.New(fmt.Sprint("Order %d already exists", order.Id))
+		return errors.New(fmt.Sprintf("Order %d already exists", order.Id))
 	}
 }
 
