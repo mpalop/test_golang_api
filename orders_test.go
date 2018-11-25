@@ -45,7 +45,6 @@ func TestParseOrder(t *testing.T) {
 }
 `)
 
-
 	var order_bad = []byte(`
 {
   "order": {
@@ -69,9 +68,13 @@ func TestParseOrder(t *testing.T) {
 	if err != nil {
 		t.Errorf("%v, %v\n", theOrder, err)
 	}
+	fmt.Printf("%s", theOrder)
+
 	theOrder2, err := models.BuildOrder(order_sample_bad_numbers)
-	if err != nil {
-		t.Errorf("%v %v\n", theOrder2, err)
+	if err == nil {
+		t.Errorf("%v %v\n", "Not detected lack of line number order", theOrder2)
+	} else {
+		fmt.Printf("%v %v\n", theOrder2, "Detected lack of line number order")
 	}
 
 	fail, err := models.BuildOrder(order_bad)
