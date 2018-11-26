@@ -161,7 +161,7 @@ The code is documented in order to allow godoc integrate it into the standard do
 to check that, just run: 
 ```bash
 test_golang_api git:(master) make run-doc
-godoc -http=:6060 -http=:6060
+godoc -http=:6060
 ```
 
 Then, visit with the browser the url: [http://127.0.0.1:6060/pkg/](http://127.0.0.1:6060/pkg/) and look in "Third Party" zone
