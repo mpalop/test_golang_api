@@ -59,7 +59,7 @@ The repo is [https://github.com/mpalop/test_golang_api](https://github.com/mpalo
 There is the code, sample fixtures and the current Readme file
 
 
-## Makefile
+## Makefile
 
 There is a Makefile to help with the different parts of the app. 
 The current implemented verbs are:
