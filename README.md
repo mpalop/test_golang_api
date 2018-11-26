@@ -55,6 +55,7 @@ github.com/julienschmidt/httprouter  ^1.2.0      v1.2.0   348b672   v1.2.0  1
 The repo is [https://github.com/mpalop/test_golang_api](https://github.com/mpalop/test_golang_api)
 There is the code, sample fixtures and the current Readme file
 
+
 ## Makefile
 There is a Makefile to help with the different parts of the app. 
 The current implemented verbs are:
@@ -113,7 +114,9 @@ Order:     2, StoreId:    30
 ```bash 
 killall test_golang_api
 ```
-(Yes, it is very provisional)
+
+*Yes, it is very provisional*
+
 
 ### Running the tests
 
