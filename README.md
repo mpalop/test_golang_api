@@ -35,13 +35,13 @@ Concerning the organization of the code, it spreads into three folders:
 
 All the test are into the folder test, as well some fixtures with sample Orders.
 
-### Installation 
+## Installation 
 ```bash 
 cd $GOPATH
 go get github.com/mpalop/sample_go_api 
 ```
 
-### Dependencies: vendor approach
+## Dependencies: vendor approach
 I got one dependency: the package httprouter from Julienschmid. 
 To manage this dependency I use dep (check the files Gopkg.* on root directory)
 
@@ -53,7 +53,7 @@ github.com/julienschmidt/httprouter  ^1.2.0      v1.2.0   348b672   v1.2.0  1
 
 ## Github
 The repo is [https://github.com/mpalop/test_golang_api](https://github.com/mpalop/test_golang_api)
-There are all the code, sample fixtures and this Readme file
+There is the code, sample fixtures and the current Readme file
 
 ## Makefile
 There is a Makefile to help with the different parts of the app. 
